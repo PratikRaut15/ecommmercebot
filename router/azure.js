@@ -4,8 +4,8 @@ const db = require("../config/connect");
 let orderManagmentService = require("../services/orderManagement");
 const sn=require('servicenow-rest-api');
 
-
-/** getTrackingStatus **/
+  
+/**** getTrackingStatus ****/
 router.post('/getTrackingStatus',async (req,res) => {
     let orderId = req.body.order_id;
     if(orderId !== ""){

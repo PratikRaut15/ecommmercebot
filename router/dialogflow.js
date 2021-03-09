@@ -3,12 +3,13 @@ var router = express.Router();
 const db = require("../config/connect");
 let orderManagmentService = require("../services/orderManagement");
 const sn=require('servicenow-rest-api');
+let path = require("path");
 
 
 /** Default Route **/
  router.get('',(req,res) => {
    //res.send("Hello world");
-    res.sendFile(path.join(__dirname + '../../amazon.html'));
+    res.sendFile(path.join(__dirname + '../../amazon2.html'));
 })
  
 
